@@ -1,0 +1,31 @@
+1.INNER JOIN 
+             SELECT t.transaction_id, c.customer_name, p.product_name, t.transaction_date, t.amount
+              FROM Transactions t
+             INNER JOIN Customers c ON t.customer_id = c.customer_id
+             INNER JOIN Products p ON t.product_id = p.product_id;
+  
+2.LEFT JOIN
+             SELECT c.customer_name, t.transaction_id
+             FROM Customers c
+             LEFT JOIN Transactions t ON c.customer_id = t.customer_id;
+
+3.RIGHT JOIN
+             SELECT p.product_name, t.transaction_id
+             FROM Products p
+             LEFT JOIN Transactions t ON p.product_id = t.product_id;
+
+4.FULL OUTER JOIN
+
+              SELECT c.customer_name, p.product_name, t.transaction_id
+              FROM Customers c
+              FULL OUTER JOIN Transactions t ON c.customer_id = t.customer_id
+              FULL OUTER JOIN Products p ON t.product_id = p.product_id;
+
+                 
+5.SELF JOIN   
+
+            SELECT a.customer_name AS Customer1, b.customer_name AS Customer2, a.region
+            FROM Customers a
+            JOIN Customers b ON a.region = b.region AND a.customer_id < b.customer_id;
+
+           
