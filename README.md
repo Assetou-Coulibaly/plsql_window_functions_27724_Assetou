@@ -220,6 +220,18 @@ Primary and foreign keys are used to maintain data integrity.
 
    No AI-generated content was copied without attribution or adaptation.
 
+                       ***Final Checklist***
+
+          - [x] PDB created successfully
+          - [x] User created inside the PDB
+          - [x] Temporary PDB created and dropped
+          - [x] OEM dashboard accessed
+          - [x] Screeshots uploaded
+          - [x] Repository is Public 
+          
+
+          
+
     
 
 
